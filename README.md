@@ -41,5 +41,7 @@ Needs a connected device or emulator (density is forced via `LocalDensity`, so a
 Expected: the two `fractionalDensity_*` tests fail with "The component with TestTag = 'second' is not
 displayed", the two `integralSpacingDensity_*` controls pass.
 
-Versions: AGP 9.4.1, Kotlin 2.4.21, Compose BOM 2026.09.00 (foundation-layout 1.12.1). The same code
-is still on `androidx-main` as of 2026-10-16.
+Versions: AGP 9.4.1, Kotlin 2.4.21, Compose BOM alpha 2026.10.00 (foundation-layout 1.13.0-beta01,
+needs compileSdk 37.1). Also reproduces on stable BOM 2026.09.00 (foundation-layout 1.12.1). The same
+code is still on `androidx-main` as of 2026-10-16. Line numbers above are from 1.12.1; in
+1.13.0-beta01 they're 1222-1223 and 1566.
